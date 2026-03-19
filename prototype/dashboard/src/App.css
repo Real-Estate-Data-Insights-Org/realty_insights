@@ -211,3 +211,44 @@
         margin-left: 0;
     }
 }
+
+/* Additional CSS for exact UI */
+.custom-tooltip {
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 12px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.charts-grid-full {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.charts-grid-full.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.section-title h3 {
+    color: var(--accent-blue);
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+}
+
+@media (max-width: 1200px) {
+    .charts-grid-full.grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
