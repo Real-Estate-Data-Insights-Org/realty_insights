@@ -252,3 +252,45 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Table and Insight Styles */
+.mt-4 { margin-top: 1.5rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.text-secondary { color: var(--text-secondary); }
+
+.insights-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.insights-table th {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+.insights-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.insights-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.insight-point h4 {
+    color: var(--accent-teal);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.insight-point p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
